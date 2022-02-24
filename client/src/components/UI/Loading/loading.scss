@@ -1,0 +1,19 @@
+@use "../../../assets/assets";
+
+.loading {
+  margin: auto;
+  position: fixed;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	width: 5rem; height: 5rem;
+  border: .5rem solid var(--border-color);
+  border-top: .5rem solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  z-index: 9999;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

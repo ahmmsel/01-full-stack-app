@@ -1,0 +1,58 @@
+@use "../../assets/assets" as use;
+
+.answers {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+  .answer--list {
+    background-color: var(--primary-bg);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.answer--form {
+  .form--controller {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.answer--details {
+  border: solid .1rem var(--border-color);
+}
+
+.answer--item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--primary-bg);
+  padding: var(--secondary-padding);
+  font-size: medium;
+  &:not(:last-child) {
+    border-bottom: solid .1rem var(--border-color);
+  }
+  .answer--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .answer--body {
+    font-weight: bold;
+  }
+  .answer--footer {
+    .answer--actions {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}

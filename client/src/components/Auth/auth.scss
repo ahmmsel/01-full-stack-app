@@ -1,0 +1,30 @@
+@use "../../assets/assets";
+
+.auth--section {
+  .container {
+    background-color: var(--primary-bg);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: var(--primary-padding);
+    .auth--form {
+      .auth--controller {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 1rem;
+        .controller--action {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          gap: .4rem;
+          input {
+            text-transform: none;
+          }
+        }
+      }
+    }
+  }
+}

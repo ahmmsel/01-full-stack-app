@@ -1,0 +1,32 @@
+
+/* colors */
+:root{
+  --primary-bg: #f0f0f0;
+  --secondary-bg: #333644;
+  --primary-color: #333644;
+  --secondary-color: #f0f0f0;
+  --item-color: #c65f63;
+  --border-color: #dbdbdb;
+}
+/* end colors */
+
+/* box model */
+:root{
+  --primary-padding: 1rem;
+  --secondary-padding: 2rem;
+  --section-margin: 4rem;
+  --primary-border: solid .1rem var(--secondary-bg);
+  --secondary-border: solid .1rem var(--primary-bg);
+  --box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+}
+/* end box model */
+
+@mixin flex {
+	display: flex;
+}
+
+@mixin grid($gap, $size) {
+	display: grid;
+  gap: $gap;
+  grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
+}

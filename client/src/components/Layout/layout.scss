@@ -1,0 +1,31 @@
+.main--header {
+  background-color: var(--secondary-bg);
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    * {
+      color: var(--secondary-color);
+    }
+    .main--navbar {
+      .nav--list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: .4rem;
+      }
+    }
+  }
+}
+
+.main--footer {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

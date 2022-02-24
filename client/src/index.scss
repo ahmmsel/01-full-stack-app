@@ -1,0 +1,171 @@
+@use "./assets/assets";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+// properties
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 2;
+  font-family: 'Cairo', sans-serif;
+  color: var(--primary-color);
+}
+
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #f3f2e8;
+}
+
+img{
+  width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.pointer {
+  cursor: pointer;
+}
+
+.x-large--text {
+  font-size: x-large;
+}
+
+.container{
+  margin: 0 auto;
+  width: 80%;
+  max-width: 50rem;
+}
+
+.title {
+  font-size: xx-large;
+}
+
+.section{
+  margin: var(--section-margin) auto;
+}
+
+.link{
+  padding: .2rem .4rem;
+  border-radius: .5rem 1rem;
+}
+
+.primary-link{
+  background-color: var(--item-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: small;
+  text-transform: uppercase;
+  box-shadow: var(--box-shadow);
+  border-radius: .25rem;
+  box-shadow: var(--box-shadow);
+  height: auto;
+  &:hover{
+    filter: brightness(80%);
+  }
+}
+
+.liked {
+  color: var(--item-color);
+}
+
+.btn{
+  outline: none;
+  border: none;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+.primary-btn{
+  background-color: var(--item-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  height: auto;
+  &:hover{
+    filter: brightness(80%);
+  }
+}
+
+.secondary-btn{
+  background-color: var(--secondary-bg);
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: large;
+  text-transform: uppercase;
+  box-shadow: var(--box-shadow);
+  height: auto;
+  &:hover{
+    filter: brightness(80%);
+  }
+}
+
+.flat-btn {
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: solid .1rem var(--primary-color);
+  &:hover{
+    filter: brightness(80%);
+  }
+}
+
+.input {
+  width: 100%;
+  padding: .5rem 1rem;
+  outline: none;
+  border: none;
+}
+
+.primary-input {
+  background-color: var(--primary-bg);
+  border: solid .1rem var(--border-color);
+  height: auto;
+  font-size: large;
+  &::selection {
+    background-color: var(--primary-bg);
+  }
+}
+
+.primary-textarea {
+  background-color: var(--primary-bg);
+  border: solid .1rem var(--border-color);
+  height: auto;
+  font-size: large;
+  height: 8rem;
+  resize: none;
+}
+
+.secondary-input {
+  background-color: var(--primary-bg);
+  border-bottom: solid .1rem var(--border-color);
+}
+
+.icon {
+  font-size: 1.6rem;
+}
+
+.icon--primary-btn {
+  border: solid .1rem var(--border-color);
+  background-color: var(--primary-bg);
+  font-size: large;
+  height: auto;
+}

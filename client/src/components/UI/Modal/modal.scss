@@ -1,0 +1,24 @@
+@use "../../../assets/assets";
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid .1rem var(--border-color);
+  z-index: 9999;
+  background-color: #fff;
+  width: 60%;
+  max-width: 40rem;
+  background-color: var(--secondary-bg);
+  .modal--container {
+    * {
+      color: var(--secondary-color);
+    }
+    .modal--header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
